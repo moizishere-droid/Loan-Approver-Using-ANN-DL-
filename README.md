@@ -8,6 +8,7 @@ It predicts whether a loan application will be **Approved (0)** or **Not Approve
 ## 🚀 Features
 
 * **Frontend with Streamlit**: Simple and interactive UI for user inputs.
+    link --> https://jefmtb6yrrbbyhbpt4ood8.streamlit.app/
 * **Machine Learning Model**: Achieved **82% accuracy**.
 * **Deep Learning Model**: Achieved **87% accuracy** with a neural network (Sigmoid activation at output).
 * **End-to-End Pipeline**: Includes preprocessing (OneHotEncoding, scaling, handling categorical features) and prediction.
