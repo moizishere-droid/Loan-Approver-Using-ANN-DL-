@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 import joblib
 import tensorflow as tf
-
+from tensorflow.keras.models import load_model
 # -------------------------------
 # Load Preprocessor and Model
 # -------------------------------
 pipeline = joblib.load("preprocessor_pipeline.pkl")
-model = tf.keras.models.load_model("final_model.pkl")
+model = tf.keras.models.load_model("loan_approver_model.h5")
 
 st.set_page_config(page_title="Loan Approval Prediction", page_icon="💳", layout="centered")
 
@@ -79,3 +79,4 @@ if submitted:
         st.success(f"✅ Loan Approved (Probability: {prob:.2f})")
     else:
         st.error(f"❌ Loan Not Approved (Probability: {prob:.2f})")
+
